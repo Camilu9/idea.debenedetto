@@ -1,0 +1,473 @@
+/*---------------------------------- ESTILOS  DE  PAGINA  PRODUCTOS ------------------------------------*/
+
+/*doy margen, color y fuente de letra y centro el texto de los h1 de la pagina productos*/
+.product h1 {
+  margin: 20px;
+  color: $piel;
+  text-align: center;
+  font-family: inherit;
+}
+/*doy margen, color y fuente a la letra, centro el texto y doy decoración subrayando a los h2 de la página productos*/
+.bodyProductos {
+  background-color: $rosa2;
+}
+/*centro el texto, doy color y fuente a la letra; doy nombre y duracion a la animación*/
+.encabezado {
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*doy margen, color a la letra, centro el texto y fuente a la letra*/
+.product h2 {
+  margin: 20px;
+  color: $piel;
+  text-align: center;
+  font-family: inherit;
+}
+.product h3 {
+  margin: 20px;
+  color: $rosa1;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large;
+}
+/*doy tamaño y redimenciono las imagenes de la pagina productos*/
+.product img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+/*utilizo grids para hacer dos columnas y una fila y doy orden a cada area*/
+.modelosTapiz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "sun moon";
+}
+.sun {
+  grid-area: sun;
+}
+.moon {
+  grid-area: moon;
+}
+/*activo display flex y doy espacio around a las imagenes de la pagina de productos*/
+.imgProd {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*armo con grids la tabla de informacion, agrego 6 columnas y 3 filas*/
+.tablaTapices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "colum1 colum2 colum3 colum4 colum5 colum6"
+    "f1 f2 f3 f4 f5 f6"
+    "f7 f8 f9 f10 f11 f12";
+}
+/*doy lugar a cada cuadro en la tabla*/
+.colum1 {
+  grid-area: colum1;
+}
+.colum2 {
+  grid-area: colum2;
+}
+.colum3 {
+  grid-area: colum3;
+}
+.colum4 {
+  grid-area: colum4;
+}
+.colum5 {
+  grid-area: colum5;
+}
+.colum6 {
+  grid-area: colum6;
+}
+.f1 {
+  grid-area: f1;
+}
+.f2 {
+  grid-area: f2;
+}
+.f3 {
+  grid-area: f3;
+}
+.f4 {
+  grid-area: f4;
+}
+.f5 {
+  grid-area: f5;
+}
+.f6 {
+  grid-area: f6;
+}
+.f7 {
+  grid-area: f7;
+}
+.f8 {
+  grid-area: f8;
+}
+.f9 {
+  grid-area: f9;
+}
+.f10 {
+  grid-area: f10;
+}
+.f11 {
+  grid-area: f11;
+}
+.f12 {
+  grid-area: f12;
+}
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla y quito decoracion*/
+.tablaTapices div {
+  color: white;
+  background-color: $verde2;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center;
+  div h2 {
+    text-decoration: none;
+  }
+}
+/*armo con grids la tabla de informacion, agregando 6 columnas y 3 filas*/
+.tablaPosaVasos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "colum1 colum2 colum3 colum4 colum5 colum6"
+    "f1 f2 f3 f4 f5 f6"
+    "f7 f8 f9 f10 f11 f12";
+}
+/*doy lugar a cada cuadro en la tabla*/
+.colum1 {
+  grid-area: colum1;
+}
+.colum2 {
+  grid-area: colum2;
+}
+.colum3 {
+  grid-area: colum3;
+}
+.colum4 {
+  grid-area: colum4;
+}
+.colum5 {
+  grid-area: colum5;
+}
+.colum6 {
+  grid-area: colum6;
+}
+.f1 {
+  grid-area: f1;
+}
+.f2 {
+  grid-area: f2;
+}
+.f3 {
+  grid-area: f3;
+}
+.f4 {
+  grid-area: f4;
+}
+.f5 {
+  grid-area: f5;
+}
+.f6 {
+  grid-area: f6;
+}
+.f7 {
+  grid-area: f7;
+}
+.f8 {
+  grid-area: f8;
+}
+.f9 {
+  grid-area: f9;
+}
+.f10 {
+  grid-area: f10;
+}
+.f11 {
+  grid-area: f11;
+}
+.f12 {
+  grid-area: f12;
+}
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla, quito la decoracion*/
+.tablaPosaVasos div {
+  color: white;
+  background-color: $verde2;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center;
+  div h2 {
+    text-decoration: none;
+  }
+}
+/*armo con grids la tabla de informacion, agregando 6 columnas y 3 filas*/
+.tablaCanastos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "colum1 colum2 colum3 colum4 colum5 colum6"
+    "f1 f2 f3 f4 f5 f6"
+    "f7 f8 f9 f10 f11 f12";
+}
+/*doy lugar a cada cuadro en la tabla*/
+.colum1 {
+  grid-area: colum1;
+}
+.colum2 {
+  grid-area: colum2;
+}
+.colum3 {
+  grid-area: colum3;
+}
+.colum4 {
+  grid-area: colum4;
+}
+.colum5 {
+  grid-area: colum5;
+}
+.colum6 {
+  grid-area: colum6;
+}
+.f1 {
+  grid-area: f1;
+}
+.f2 {
+  grid-area: f2;
+}
+.f3 {
+  grid-area: f3;
+}
+.f4 {
+  grid-area: f4;
+}
+.f5 {
+  grid-area: f5;
+}
+.f6 {
+  grid-area: f6;
+}
+.f7 {
+  grid-area: f7;
+}
+.f8 {
+  grid-area: f8;
+}
+.f9 {
+  grid-area: f9;
+}
+.f10 {
+  grid-area: f10;
+}
+.f11 {
+  grid-area: f11;
+}
+.f12 {
+  grid-area: f12;
+}
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla y quito decoracion de texto*/
+.tablaCanastos div {
+  color: white;
+  background-color: $verde2;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center;
+  div h2 {
+    text-decoration: none;
+  }
+}
+/*armo tabla con grids, agrego 6 columnas y 4 filas*/
+.tablaEspejos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "colum1 colum2 colum3 colum4 colum5 colum6"
+    "f1 f2 f3 f4 f5 f6"
+    "f7 f8 f9 f10 f11 f12"
+    "f13 f14 f15 f16 f17 f18";
+}
+/*doy lugar a cada cuadro de la tabla*/
+.colum1 {
+  grid-area: colum1;
+}
+.colum2 {
+  grid-area: colum2;
+}
+.colum3 {
+  grid-area: colum3;
+}
+.colum4 {
+  grid-area: colum4;
+}
+.colum5 {
+  grid-area: colum5;
+}
+.colum6 {
+  grid-area: colum6;
+}
+.f1 {
+  grid-area: f1;
+}
+.f2 {
+  grid-area: f2;
+}
+.f3 {
+  grid-area: f3;
+}
+.f4 {
+  grid-area: f4;
+}
+.f5 {
+  grid-area: f5;
+}
+.f6 {
+  grid-area: f6;
+}
+.f7 {
+  grid-area: f7;
+}
+.f8 {
+  grid-area: f8;
+}
+.f9 {
+  grid-area: f9;
+}
+.f10 {
+  grid-area: f10;
+}
+.f11 {
+  grid-area: f11;
+}
+.f12 {
+  grid-area: f12;
+}
+.f13 {
+  grid-area: f13;
+}
+.f14 {
+  grid-area: f14;
+}
+.f15 {
+  grid-area: f15;
+}
+.f16 {
+  grid-area: f16;
+}
+.f17 {
+  grid-area: f17;
+}
+.f18 {
+  grid-area: f18;
+}
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla y quito la decoracion*/
+.tablaEspejos div {
+  color: white;
+  background-color: $verde2;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center;
+  div h2 {
+    text-decoration: none;
+  }
+}
+/*armo tabla con grids, agrego 5 columnas y 2 filas*/
+.tablaAlfombra {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "colum1 colum2 colum3 colum4 colum5"
+    "f1 f2 f3 f4 f5";
+}
+/*doy lugar a cada cuadro dentro de la tabla*/
+.colum1 {
+  grid-area: colum1;
+}
+.colum2 {
+  grid-area: colum2;
+}
+.colum3 {
+  grid-area: colum3;
+}
+.colum4 {
+  grid-area: colum4;
+}
+.colum5 {
+  grid-area: colum5;
+}
+.f1 {
+  grid-area: f1;
+}
+.f2 {
+  grid-area: f2;
+}
+.f3 {
+  grid-area: f3;
+}
+.f4 {
+  grid-area: f4;
+}
+.f5 {
+  grid-area: f5;
+}
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla quito la decoracion*/
+.tablaAlfombra div {
+  color: white;
+  background-color: $verde2;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center;
+  div h2 {
+    text-decoration: none;
+  }
+}
+/*doy margen. color y fuente de letra, centro el texto y doy decoracion de subrayado a los h3 de la pagina productos*/
+.product h3 {
+  margin: 20px;
+  color: $piel;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+}
+.footerProductos {
+  background-color: $verde2;
+}

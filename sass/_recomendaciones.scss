@@ -1,0 +1,107 @@
+/*--------------------------------------  ESTILOS  DE  LA  PAGINA  RECOMENDACIONES  DE  CUIDADO -----------------------------------*/
+
+/*doy margen, color y fuente de letra y centro el texto de los h1 en la pagina de recomendaciones de cuidado*/
+.bodyRecom {
+    background-color: $rosa2;
+  }
+  /*doy margen, color, alineacion y fuente a la letra de los h1*/
+  .recom h1 {
+    margin: 20px;
+    color: $piel;
+    text-align: center;
+    font-family: inherit;
+  }
+  /*doy margen, color y fuente a la letra, centro el texto y doy decoracion de subrayado en los h2 de la pagina recomendaciones de cuidado*/
+  .recom h2 {
+    margin: 20px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    text-decoration: underline;
+  }
+  /*doy margen, color de fondo, color y fuente de letra, estilo al padding, doy funcion de linea y bloque y centro el texto en los parrafos de la pagina recomendaciones de cuidado*/
+  .recom p {
+    margin: 20px;
+    color: white;
+    padding: 20px 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    display: inline-block;
+    text-align: center;
+  }
+  .recom h3 {
+    margin: 20px;
+  color: $piel;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large;
+  }
+  /*centro el cuadro de texto del parrafo en la pagina de recomendaciones de cuidado*/
+  .introduccionRecom {
+    text-align: center;
+  }
+  /*armo con grids la tabla de recomendaciones de cuidado, doy funcion de grid, doy 4 columnas y 4 filas, doy espacio 0, doy orden a las filas*/
+  .tablaRecomendaciones {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px, 0px;
+    grid-template-areas:
+      "tapices posavasos espejos alfombras"
+      "cuadro1 cuadro4 cuadro5 cuadro7"
+      "cuadro2 cuadro4 cuadro5 cuadro7"
+      "cuadro3 cuadro4 cuadro6 cuadro7";
+  }
+  /*doy lugar a cada cuadro en la tabla de recomendaciones*/
+  .tapices {
+    grid-area: tapices;
+  }
+  .posavasos {
+    grid-area: posavasos;
+  }
+  .espejos {
+    grid-area: espejos;
+  }
+  .alfombras {
+    grid-area: alfombras;
+  }
+  .cuadro1 {
+    grid-area: cuadro1;
+  }
+  .cuadro2 {
+    grid-area: cuadro2;
+  }
+  .cuadro3 {
+    grid-area: cuadro3;
+  }
+  .cuadro5 {
+    grid-area: cuadro5;
+  }
+  .cuadro6 {
+    grid-area: cuadro6;
+  }
+  .cuadro4 {
+    grid-area: cuadro4;
+  }
+  .cuadro7 {
+    grid-area: cuadro7;
+  }
+  /*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla*/
+  .tablaRecomendaciones div {
+    background-color: $verde2;
+    font-size: medium;
+    font-family: sans-serif;
+    border: 3px solid white;
+  }
+  /*doy padding y margen de separacion de mi tabla, centro el texto y el contenido*/
+  .tablaRecomendaciones {
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  /*doy color al fondo del footer en la pagina recomendaciones de cuidado*/
+  .footerRecom {
+    background-color: $verde2;
+  }

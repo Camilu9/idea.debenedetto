@@ -1,0 +1,82 @@
+/*------------------------------ ESTILOS  QUE  ESTAN  EN  TODAS  LAS  PAGINAS  DEL  SITIO  WEB ---------------------------------*/
+
+/*reseteo de margen y padding*/
+* {
+  padding: 0;
+  margin: 0;
+}
+/*color de fondo para la pagina*/
+body {
+  background-color: $verde1;
+}
+/*margen, altura, color de fondo y dolor de borde para las lineas que dividen las secciones de mi pagina*/
+hr {
+  margin: $margin1/2;
+  height: $height/4;
+  background-color: $rosa1;
+  border: $rosa1;
+}
+/*activo la funcion de flex, le digo que no rellene y doy color de fondo; doy tamaño a los iconos del footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: $rosa2;
+  a img {
+    height: ($height*2)+3;
+  }
+}
+/*doy funcion de flex al div que contiene los iconos de redes, lo coloco como una fila y separo el contenido en estilo evenly*/
+.footerRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/*doy funcion de flex al div que contiene la direccion, correo y telefono; lo coloco como fila, separo con estilo evenly y centro el texto*/
+.footerEstilo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/*redondeo las puntas de las cajas, doy color de fondo a las mismas, centro el texto dentro, doy tamaño a las cajas y margenes*/
+.footerEstilo div {
+  border-radius: 2em;
+  background-color: $piel;
+  text-align: center;
+  height: ($height*10)-10;
+  width: 300px;
+  padding: 20px;
+  margin: ($margin1)-10;
+}
+/*doy funcion de flex a los titulos, los coloco como filas, centro el cuadro y doy color a la letra*/
+.footerTitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: $piel;
+}
+/*doy funcion de bloque y centro el logo*/
+.logo {
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+/*centro el carousel*/
+.navegacion {
+  display: flex;
+  justify-content: center;
+}
+/*doy color de fondo a la barra de navegacion y cambio color de fondo cuando se posa el mouse*/
+.navbar {
+  background-color: $rosa1;
+  li:hover {
+    background-color: $rosa2;
+  }
+}
+
+/*doy color al menu desplegable*/
+.dropdown-menu {
+  background-color: $rosa1;
+}
+
+

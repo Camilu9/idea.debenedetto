@@ -1,0 +1,53 @@
+/*------------------------------------ ESTILOS  DE  LA  PAGINA  PRINCIPAL --------------------------------------*/
+
+/*doy margen, color de fondo, color y fuente de letra, estilo de padding, doy la funcion de block y de linea, centro el texto de los parrafos, doy nombre a la animacion, doy lugar al comienzo, doy tiempo a la duracion y al delay*/
+.principal p {
+  margin: 20px;
+  background-color: $verde1;
+  color: white;
+  padding: 20px 15px;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  text-align: center;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+/*centro el texto, doy margen, alineacion y color a la letra del enlace*/
+.encabezado {
+  text-align: center;
+  p a {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    color: white;
+  }
+}
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*centro el carousel con flexbox*/
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+/*doy tamaño a las imagenes del carousel sin deformarlas*/
+#carouselExampleIndicators {
+  height: 700px;
+  width: 700px;
+  object-fit: cover;
+}
+/*doy margen, color y fuente de letra y centro el texto de los h1 de la pagina princpial*/
+.principal h1 {
+  margin: 20px;
+  color: $verde3;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}

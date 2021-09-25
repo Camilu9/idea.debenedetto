@@ -1,0 +1,63 @@
+/*------------------------------------------ ESTILOS  DE  LA  PAGINA  MARCA -----------------------------------------*/
+
+/*doy margen, centro el texto, doy color, fuente y tamaño a la letra de los h1 de la pagina marca*/
+.marca h1 {
+  margin: 20px;
+  text-align: center;
+  color: $verde2;
+  font-family: "Pinyon Script", cursive;
+  font-size: 50px;
+}
+/*doy margen, color y tamaño a la letra, centro el texto, doy padding, elijo la fuente, doy titulo y duracion a la animación*/
+.marca h2 {
+  margin: 20px;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 20px 15px;
+  font-family: "Open Sans", sans-serif;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*doy la funcion de bloque, redondeo las puntas, doy margen y padding automatico para centrar la imagen dentro de la pagina marca*/
+.marca img {
+  display: block;
+  border-radius: 10px 30px;
+  margin: auto;
+  padding: auto;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+/*doy margen. color de fondo, color, fuente y tamaño de la letra, estilo al padding, centro el texto y doy la funcion de bloque y linea en los parrafos de la pagina marca*/
+.marca p {
+  margin: 20px;
+  background-color: $verde3;
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
+  font-size: 30px;
+  display: inline-block;
+}
+/*centro los cuadros de parrafos en la pagina de marca*/
+.parrafosMarca {
+  text-align: center;
+}
+/*doy la funcion de bloque, doy margen y padding automatico para centrar el video de la pagina marca*/
+.marca video {
+  display: block;
+  margin: auto;
+  padding: auto;
+}

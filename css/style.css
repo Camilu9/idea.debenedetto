@@ -1,0 +1,909 @@
+@charset "UTF-8";
+/*------------------------------ ESTILOS  QUE  ESTAN  EN  TODAS  LAS  PAGINAS  DEL  SITIO  WEB ---------------------------------*/
+/*reseteo de margen y padding*/
+* {
+  padding: 0;
+  margin: 0; }
+
+/*color de fondo para la pagina*/
+body {
+  background-color: #b7b7a4; }
+
+/*margen, altura, color de fondo y dolor de borde para las lineas que dividen las secciones de mi pagina*/
+hr {
+  margin: 15px;
+  height: 4px;
+  background-color: #ddbea9;
+  border: #ddbea9; }
+
+/*activo la funcion de flex, le digo que no rellene y doy color de fondo; doy tamaño a los iconos del footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #cb997e; }
+  footer a img {
+    height: 35px; }
+
+/*doy funcion de flex al div que contiene los iconos de redes, lo coloco como una fila y separo el contenido en estilo evenly*/
+.footerRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+/*doy funcion de flex al div que contiene la direccion, correo y telefono; lo coloco como fila, separo con estilo evenly y centro el texto*/
+.footerEstilo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+/*redondeo las puntas de las cajas, doy color de fondo a las mismas, centro el texto dentro, doy tamaño a las cajas y margenes*/
+.footerEstilo div {
+  border-radius: 2em;
+  background-color: #ffe8d6;
+  text-align: center;
+  height: 150px;
+  width: 300px;
+  padding: 20px;
+  margin: 20px; }
+
+/*doy funcion de flex a los titulos, los coloco como filas, centro el cuadro y doy color a la letra*/
+.footerTitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #ffe8d6; }
+
+/*doy funcion de bloque y centro el logo*/
+.logo {
+  display: block;
+  margin: auto;
+  padding: auto; }
+
+/*centro el carousel*/
+.navegacion {
+  display: flex;
+  justify-content: center; }
+
+/*doy color de fondo a la barra de navegacion y cambio color de fondo cuando se posa el mouse*/
+.navbar {
+  background-color: #ddbea9; }
+  .navbar li:hover {
+    background-color: #cb997e; }
+
+/*doy color al menu desplegable*/
+.dropdown-menu {
+  background-color: #ddbea9; }
+
+/*------------------------------------ ESTILOS  DE  LA  PAGINA  PRINCIPAL --------------------------------------*/
+/*doy margen, color de fondo, color y fuente de letra, estilo de padding, doy la funcion de block y de linea, centro el texto de los parrafos, doy nombre a la animacion, doy lugar al comienzo, doy tiempo a la duracion y al delay*/
+.principal p {
+  margin: 20px;
+  background-color: #b7b7a4;
+  color: white;
+  padding: 20px 15px;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  text-align: center;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s; }
+
+/*centro el texto, doy margen, alineacion y color a la letra del enlace*/
+.encabezado {
+  text-align: center; }
+  .encabezado p a {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    color: white; }
+
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+/*centro el carousel con flexbox*/
+.carousel {
+  display: flex;
+  justify-content: center; }
+
+/*doy tamaño a las imagenes del carousel sin deformarlas*/
+#carouselExampleIndicators {
+  height: 700px;
+  width: 700px;
+  object-fit: cover; }
+
+/*doy margen, color y fuente de letra y centro el texto de los h1 de la pagina princpial*/
+.principal h1 {
+  margin: 20px;
+  color: #6b705c;
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }
+
+/*---------------------------------- ESTILOS  DE  PAGINA  PRODUCTOS ------------------------------------*/
+/*doy margen, color y fuente de letra y centro el texto de los h1 de la pagina productos*/
+.product h1 {
+  margin: 20px;
+  color: #ffe8d6;
+  text-align: center;
+  font-family: inherit; }
+
+/*doy margen, color y fuente a la letra, centro el texto y doy decoración subrayando a los h2 de la página productos*/
+.bodyProductos {
+  background-color: #cb997e; }
+
+/*centro el texto, doy color y fuente a la letra; doy nombre y duracion a la animación*/
+.encabezado {
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s; }
+
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+/*doy margen, color a la letra, centro el texto y fuente a la letra*/
+.product h2 {
+  margin: 20px;
+  color: #ffe8d6;
+  text-align: center;
+  font-family: inherit; }
+
+.product h3 {
+  margin: 20px;
+  color: #ddbea9;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large; }
+
+/*doy tamaño y redimenciono las imagenes de la pagina productos*/
+.product img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover; }
+
+/*utilizo grids para hacer dos columnas y una fila y doy orden a cada area*/
+.modelosTapiz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "sun moon"; }
+
+.sun {
+  grid-area: sun; }
+
+.moon {
+  grid-area: moon; }
+
+/*activo display flex y doy espacio around a las imagenes de la pagina de productos*/
+.imgProd {
+  display: flex;
+  justify-content: space-evenly; }
+
+/*armo con grids la tabla de informacion, agrego 6 columnas y 3 filas*/
+.tablaTapices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
+
+/*doy lugar a cada cuadro en la tabla*/
+.colum1 {
+  grid-area: colum1; }
+
+.colum2 {
+  grid-area: colum2; }
+
+.colum3 {
+  grid-area: colum3; }
+
+.colum4 {
+  grid-area: colum4; }
+
+.colum5 {
+  grid-area: colum5; }
+
+.colum6 {
+  grid-area: colum6; }
+
+.f1 {
+  grid-area: f1; }
+
+.f2 {
+  grid-area: f2; }
+
+.f3 {
+  grid-area: f3; }
+
+.f4 {
+  grid-area: f4; }
+
+.f5 {
+  grid-area: f5; }
+
+.f6 {
+  grid-area: f6; }
+
+.f7 {
+  grid-area: f7; }
+
+.f8 {
+  grid-area: f8; }
+
+.f9 {
+  grid-area: f9; }
+
+.f10 {
+  grid-area: f10; }
+
+.f11 {
+  grid-area: f11; }
+
+.f12 {
+  grid-area: f12; }
+
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla y quito decoracion*/
+.tablaTapices div {
+  color: white;
+  background-color: #a5a58d;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center; }
+  .tablaTapices div div h2 {
+    text-decoration: none; }
+
+/*armo con grids la tabla de informacion, agregando 6 columnas y 3 filas*/
+.tablaPosaVasos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
+
+/*doy lugar a cada cuadro en la tabla*/
+.colum1 {
+  grid-area: colum1; }
+
+.colum2 {
+  grid-area: colum2; }
+
+.colum3 {
+  grid-area: colum3; }
+
+.colum4 {
+  grid-area: colum4; }
+
+.colum5 {
+  grid-area: colum5; }
+
+.colum6 {
+  grid-area: colum6; }
+
+.f1 {
+  grid-area: f1; }
+
+.f2 {
+  grid-area: f2; }
+
+.f3 {
+  grid-area: f3; }
+
+.f4 {
+  grid-area: f4; }
+
+.f5 {
+  grid-area: f5; }
+
+.f6 {
+  grid-area: f6; }
+
+.f7 {
+  grid-area: f7; }
+
+.f8 {
+  grid-area: f8; }
+
+.f9 {
+  grid-area: f9; }
+
+.f10 {
+  grid-area: f10; }
+
+.f11 {
+  grid-area: f11; }
+
+.f12 {
+  grid-area: f12; }
+
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla, quito la decoracion*/
+.tablaPosaVasos div {
+  color: white;
+  background-color: #a5a58d;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center; }
+  .tablaPosaVasos div div h2 {
+    text-decoration: none; }
+
+/*armo con grids la tabla de informacion, agregando 6 columnas y 3 filas*/
+.tablaCanastos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
+
+/*doy lugar a cada cuadro en la tabla*/
+.colum1 {
+  grid-area: colum1; }
+
+.colum2 {
+  grid-area: colum2; }
+
+.colum3 {
+  grid-area: colum3; }
+
+.colum4 {
+  grid-area: colum4; }
+
+.colum5 {
+  grid-area: colum5; }
+
+.colum6 {
+  grid-area: colum6; }
+
+.f1 {
+  grid-area: f1; }
+
+.f2 {
+  grid-area: f2; }
+
+.f3 {
+  grid-area: f3; }
+
+.f4 {
+  grid-area: f4; }
+
+.f5 {
+  grid-area: f5; }
+
+.f6 {
+  grid-area: f6; }
+
+.f7 {
+  grid-area: f7; }
+
+.f8 {
+  grid-area: f8; }
+
+.f9 {
+  grid-area: f9; }
+
+.f10 {
+  grid-area: f10; }
+
+.f11 {
+  grid-area: f11; }
+
+.f12 {
+  grid-area: f12; }
+
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla y quito decoracion de texto*/
+.tablaCanastos div {
+  color: white;
+  background-color: #a5a58d;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center; }
+  .tablaCanastos div div h2 {
+    text-decoration: none; }
+
+/*armo tabla con grids, agrego 6 columnas y 4 filas*/
+.tablaEspejos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12" "f13 f14 f15 f16 f17 f18"; }
+
+/*doy lugar a cada cuadro de la tabla*/
+.colum1 {
+  grid-area: colum1; }
+
+.colum2 {
+  grid-area: colum2; }
+
+.colum3 {
+  grid-area: colum3; }
+
+.colum4 {
+  grid-area: colum4; }
+
+.colum5 {
+  grid-area: colum5; }
+
+.colum6 {
+  grid-area: colum6; }
+
+.f1 {
+  grid-area: f1; }
+
+.f2 {
+  grid-area: f2; }
+
+.f3 {
+  grid-area: f3; }
+
+.f4 {
+  grid-area: f4; }
+
+.f5 {
+  grid-area: f5; }
+
+.f6 {
+  grid-area: f6; }
+
+.f7 {
+  grid-area: f7; }
+
+.f8 {
+  grid-area: f8; }
+
+.f9 {
+  grid-area: f9; }
+
+.f10 {
+  grid-area: f10; }
+
+.f11 {
+  grid-area: f11; }
+
+.f12 {
+  grid-area: f12; }
+
+.f13 {
+  grid-area: f13; }
+
+.f14 {
+  grid-area: f14; }
+
+.f15 {
+  grid-area: f15; }
+
+.f16 {
+  grid-area: f16; }
+
+.f17 {
+  grid-area: f17; }
+
+.f18 {
+  grid-area: f18; }
+
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla y quito la decoracion*/
+.tablaEspejos div {
+  color: white;
+  background-color: #a5a58d;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center; }
+  .tablaEspejos div div h2 {
+    text-decoration: none; }
+
+/*armo tabla con grids, agrego 5 columnas y 2 filas*/
+.tablaAlfombra {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5" "f1 f2 f3 f4 f5"; }
+
+/*doy lugar a cada cuadro dentro de la tabla*/
+.colum1 {
+  grid-area: colum1; }
+
+.colum2 {
+  grid-area: colum2; }
+
+.colum3 {
+  grid-area: colum3; }
+
+.colum4 {
+  grid-area: colum4; }
+
+.colum5 {
+  grid-area: colum5; }
+
+.f1 {
+  grid-area: f1; }
+
+.f2 {
+  grid-area: f2; }
+
+.f3 {
+  grid-area: f3; }
+
+.f4 {
+  grid-area: f4; }
+
+.f5 {
+  grid-area: f5; }
+
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla quito la decoracion*/
+.tablaAlfombra div {
+  color: white;
+  background-color: #a5a58d;
+  font-size: large;
+  font-family: sans-serif;
+  border: 3px solid white;
+  text-align: center; }
+  .tablaAlfombra div div h2 {
+    text-decoration: none; }
+
+/*doy margen. color y fuente de letra, centro el texto y doy decoracion de subrayado a los h3 de la pagina productos*/
+.product h3 {
+  margin: 20px;
+  color: #ffe8d6;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline; }
+
+.footerProductos {
+  background-color: #a5a58d; }
+
+/*------------------------------------------ ESTILOS  DE  LA  PAGINA  MARCA -----------------------------------------*/
+/*doy margen, centro el texto, doy color, fuente y tamaño a la letra de los h1 de la pagina marca*/
+.marca h1 {
+  margin: 20px;
+  text-align: center;
+  color: #a5a58d;
+  font-family: "Pinyon Script", cursive;
+  font-size: 50px; }
+
+/*doy margen, color y tamaño a la letra, centro el texto, doy padding, elijo la fuente, doy titulo y duracion a la animación*/
+.marca h2 {
+  margin: 20px;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 20px 15px;
+  font-family: "Open Sans", sans-serif;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s; }
+
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+/*doy la funcion de bloque, redondeo las puntas, doy margen y padding automatico para centrar la imagen dentro de la pagina marca*/
+.marca img {
+  display: block;
+  border-radius: 10px 30px;
+  margin: auto;
+  padding: auto;
+  height: 500px;
+  width: 500px;
+  object-fit: cover; }
+
+/*doy margen. color de fondo, color, fuente y tamaño de la letra, estilo al padding, centro el texto y doy la funcion de bloque y linea en los parrafos de la pagina marca*/
+.marca p {
+  margin: 20px;
+  background-color: #6b705c;
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
+  font-size: 30px;
+  display: inline-block; }
+
+/*centro los cuadros de parrafos en la pagina de marca*/
+.parrafosMarca {
+  text-align: center; }
+
+/*doy la funcion de bloque, doy margen y padding automatico para centrar el video de la pagina marca*/
+.marca video {
+  display: block;
+  margin: auto;
+  padding: auto; }
+
+/*--------------------------------------  ESTILOS  DE  LA  PAGINA  RECOMENDACIONES  DE  CUIDADO -----------------------------------*/
+/*doy margen, color y fuente de letra y centro el texto de los h1 en la pagina de recomendaciones de cuidado*/
+.bodyRecom {
+  background-color: #cb997e; }
+
+/*doy margen, color, alineacion y fuente a la letra de los h1*/
+.recom h1 {
+  margin: 20px;
+  color: #ffe8d6;
+  text-align: center;
+  font-family: inherit; }
+
+/*doy margen, color y fuente a la letra, centro el texto y doy decoracion de subrayado en los h2 de la pagina recomendaciones de cuidado*/
+.recom h2 {
+  margin: 20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline; }
+
+/*doy margen, color de fondo, color y fuente de letra, estilo al padding, doy funcion de linea y bloque y centro el texto en los parrafos de la pagina recomendaciones de cuidado*/
+.recom p {
+  margin: 20px;
+  color: white;
+  padding: 20px 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  display: inline-block;
+  text-align: center; }
+
+.recom h3 {
+  margin: 20px;
+  color: #ffe8d6;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large; }
+
+/*centro el cuadro de texto del parrafo en la pagina de recomendaciones de cuidado*/
+.introduccionRecom {
+  text-align: center; }
+
+/*armo con grids la tabla de recomendaciones de cuidado, doy funcion de grid, doy 4 columnas y 4 filas, doy espacio 0, doy orden a las filas*/
+.tablaRecomendaciones {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px, 0px;
+  grid-template-areas: "tapices posavasos espejos alfombras" "cuadro1 cuadro4 cuadro5 cuadro7" "cuadro2 cuadro4 cuadro5 cuadro7" "cuadro3 cuadro4 cuadro6 cuadro7"; }
+
+/*doy lugar a cada cuadro en la tabla de recomendaciones*/
+.tapices {
+  grid-area: tapices; }
+
+.posavasos {
+  grid-area: posavasos; }
+
+.espejos {
+  grid-area: espejos; }
+
+.alfombras {
+  grid-area: alfombras; }
+
+.cuadro1 {
+  grid-area: cuadro1; }
+
+.cuadro2 {
+  grid-area: cuadro2; }
+
+.cuadro3 {
+  grid-area: cuadro3; }
+
+.cuadro5 {
+  grid-area: cuadro5; }
+
+.cuadro6 {
+  grid-area: cuadro6; }
+
+.cuadro4 {
+  grid-area: cuadro4; }
+
+.cuadro7 {
+  grid-area: cuadro7; }
+
+/*doy color a la letra, color al fondo, tamaño y fuente a la letra y borde dentro de la tabla*/
+.tablaRecomendaciones div {
+  background-color: #a5a58d;
+  font-size: medium;
+  font-family: sans-serif;
+  border: 3px solid white; }
+
+/*doy padding y margen de separacion de mi tabla, centro el texto y el contenido*/
+.tablaRecomendaciones {
+  padding: 50px;
+  margin: 30px;
+  text-align: center;
+  justify-content: center; }
+
+/*doy color al fondo del footer en la pagina recomendaciones de cuidado*/
+.footerRecom {
+  background-color: #a5a58d; }
+
+/*---------------------------------------- ESTILOS  DE  LA  PAGINA  ECO  TUTORIALES ---------------------------------*/
+/*doy margen, color y fuente a las letras y centro el texto en los h1 de la pagina de eco tutoriales */
+.eco h1 {
+  margin: 20px;
+  color: #a5a58d;
+  text-align: center;
+  font-family: inherit; }
+
+.eco h5 {
+  margin: 20px;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 20px 15px;
+  font-family: "Open Sans", sans-serif;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s; }
+
+/*doy opacidad de 0.2 para el inicio y termino con opacidad 3*/
+@keyframes text_animacion {
+  0% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+/*doy margen, color y fuente de letra y centro el texto en los h2 de la pagina eco tutoriales*/
+.eco h2 {
+  margin: 20px;
+  color: #6b705c;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center; }
+
+/*doy funcion de linea y bloque, centro el texto, doy margen,color de fondo, color y fuente de letra, estilo de padding y centro el texto en la pagina eco tutoriales*/
+.eco p {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  background-color: #6b705c;
+  color: white;
+  padding: 20px 15px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+
+/*centro el div donde esta el texto*/
+.pEco {
+  text-align: center; }
+
+/*doy margen, color y fuente a la letra, centro el texto y doy subrayado a los h3 de la pagina eco tutoriales*/
+.eco h3 {
+  margin: 20px;
+  color: #6b705c;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline; }
+
+/*centro el contenido de mis flex*/
+.imgEco {
+  display: flex;
+  justify-content: center; }
+
+/*doy tamaño y evito que se deformen las imagenes*/
+.imgEco img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover; }
+
+/*aplico grids a las imagenes con dos columnas y dos filas*/
+.imgsNiños {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "img1 img2" "img1 img3"; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+/*centro mis grids*/
+.imgsNiños {
+  justify-content: center; }
+
+.footerEco {
+  background-color: #ddbea9; }
+
+/*------------------------------------------ ESTILOS  DE  LA  PAGINA  CONTACTO -----------------------------------------*/
+.bodyContact {
+  background-color: #cb997e; }
+
+/*le doy margen, color a la letra y centro el texto en el h1 de la pagina contacto*/
+.contacto h1 {
+  margin: 20px;
+  text-align: center;
+  color: #ffe8d6; }
+
+/*doy la funcion de bloque, doy estilo a los margenes de abajo y los costado y al padding de la imagen de la pagina contacto*/
+.contacto img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: auto;
+  border-radius: 10px 30px; }
+
+/*doy color y tamaño de letra, estilo al padding, centro el texto, doy fuente a la letra y un margen en los parrafos de la pagina contacto*/
+.contacto p {
+  display: inline-block;
+  color: white;
+  font-size: larger;
+  padding: 20px 15px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 20px;
+  animation-name: text_animacion;
+  animation-iteration-count: initial;
+  animation-duration: 4s;
+  animation-delay: 0.5s; }
+
+/*centro el div en el que esta el parrafo*/
+.pContact {
+  text-align: center; }
+
+.form {
+  display: flex;
+  justify-content: center; }
+
+/*doy color a las letras y margen del formulario de la pagina contacto*/
+.contacto form {
+  display: inline-block;
+  color: #6b705c;
+  border-radius: 10px;
+  background-color: #a5a58d;
+  align-content: center;
+  padding: 20px 15px;
+  margin: 20px;
+  height: 550px;
+  width: 300px; }
+
+/*doy color al footer de la pagina contactos*/
+.footerContact {
+  background-color: #a5a58d; }
+
+/*--------------------------------------------- VISTA  PARA  TIPOS  DE  DISPOSITIVOS --------------------------------------------------*/
+/*para celulares*/
+@media only screen and (max-width: 576px) {
+  footer {
+    background-color: #6b705c; } }
+
+/*para tablets*/
+@media only screen and (min-width: 576px) {
+  footer {
+    background-color: #ffe8d6; } }
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    background-color: #cb997e; } }
+
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: #ffe8d6; } }
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    background-color: #cb997e; } }

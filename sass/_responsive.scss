@@ -1,0 +1,29 @@
+/*--------------------------------------------- VISTA  PARA  TIPOS  DE  DISPOSITIVOS --------------------------------------------------*/
+
+/*para celulares*/
+@media only screen and (max-width: 576px) {
+  footer {
+    background-color: $verde3;
+  }
+}
+/*para tablets*/
+@media only screen and (min-width: 576px) {
+  footer {
+    background-color: $piel;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  footer {
+    background-color: $rosa2;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: $piel;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h1 {
+    background-color: $rosa2;
+  }
+}

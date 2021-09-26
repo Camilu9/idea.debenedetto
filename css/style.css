@@ -209,7 +209,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
 
 /*doy lugar a cada cuadro en la tabla*/
 .colum1 {
@@ -284,7 +284,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
 
 /*doy lugar a cada cuadro en la tabla*/
 .colum1 {
@@ -359,7 +359,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12"; }
 
 /*doy lugar a cada cuadro en la tabla*/
 .colum1 {
@@ -434,7 +434,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12" "f13 f14 f15 f16 f17 f18"; }
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5 colum6" "f1 f2 f3 f4 f5 f6" "f7 f8 f9 f10 f11 f12" "f13 f14 f15 f16 f17 f18"; }
 
 /*doy lugar a cada cuadro de la tabla*/
 .colum1 {
@@ -527,7 +527,7 @@ footer {
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "colum1 colum2 colum3 colum4 colum5" "f1 f2 f3 f4 f5"; }
+  grid-template-areas: "colum1 colum2 colum3 colum4 colum5" "f1 f2 f3 f4 f5"; }
 
 /*doy lugar a cada cuadro dentro de la tabla*/
 .colum1 {
@@ -695,7 +695,7 @@ footer {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   gap: 0px, 0px;
-  grid-template-areas: "tapices posavasos espejos alfombras" "cuadro1 cuadro4 cuadro5 cuadro7" "cuadro2 cuadro4 cuadro5 cuadro7" "cuadro3 cuadro4 cuadro6 cuadro7"; }
+  grid-template-areas: "tapices posavasos espejos alfombras" "cuadro1 cuadro4 cuadro5 cuadro7" "cuadro2 cuadro4 cuadro5 cuadro7" "cuadro3 cuadro4 cuadro6 cuadro7"; }
 
 /*doy lugar a cada cuadro en la tabla de recomendaciones*/
 .tapices {
@@ -823,7 +823,7 @@ footer {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 0px 0px;
-  grid-template-areas: "img1 img2" "img1 img3"; }
+  grid-template-areas: "img1 img2" "img1 img3"; }
 
 .img1 {
   grid-area: img1; }
@@ -878,21 +878,25 @@ footer {
 .pContact {
   text-align: center; }
 
+/*doy funcion de flex, centro el contenido, doy un radio al borde, color de fondo, margin, padding, height y widht al div que contiene el formulario*/
 .form {
   display: flex;
-  justify-content: center; }
-
-/*doy color a las letras y margen del formulario de la pagina contacto*/
-.contacto form {
-  display: inline-block;
-  color: #6b705c;
+  justify-content: center;
   border-radius: 10px;
   background-color: #a5a58d;
-  align-content: center;
   padding: 20px 15px;
   margin: 20px;
   height: 550px;
-  width: 300px; }
+  width: 1000px; }
+
+/*doy funcion de flex y centro el contenido del div */
+.divform {
+  display: flex;
+  justify-content: center; }
+
+/*doy color a las letras del formulario de la pagina contacto*/
+.contacto form {
+  color: #6b705c; }
 
 /*doy color al footer de la pagina contactos*/
 .footerContact {

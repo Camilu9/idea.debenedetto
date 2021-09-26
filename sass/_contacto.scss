@@ -36,21 +36,25 @@
 .pContact {
   text-align: center;
 }
+/*doy funcion de flex, centro el contenido, doy un radio al borde, color de fondo, margin, padding, height y widht al div que contiene el formulario*/
 .form {
   display: flex;
   justify-content: center;
-}
-/*doy color a las letras y margen del formulario de la pagina contacto*/
-.contacto form {
-  display: inline-block;
-  color: $verde3;
   border-radius: 10px;
   background-color: $verde2;
-  align-content: center;
   padding: 20px 15px;
   margin: 20px;
   height: 550px;
-  width: 300px;
+  width: 1000px;
+}
+/*doy funcion de flex y centro el contenido del div */
+.divform{
+  display: flex;
+  justify-content: center;
+}
+/*doy color a las letras del formulario de la pagina contacto*/
+.contacto form {
+  color: $verde3;
 }
 /*doy color al footer de la pagina contactos*/
 .footerContact {

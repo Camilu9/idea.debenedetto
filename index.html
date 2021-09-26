@@ -19,25 +19,26 @@
     <title>Inicio</title>
 </head>
 <body>
-    <div>
-        <img class="logo" src="multimedia/imagenes/canastos_1.jpg" /><br>
-    </div>
     <div class="navegacion">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <a class="navbar-brand" href="#"><img class="logo" src="multimedia/imagenes/logoo.png" /><br></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/productos.html">Productos</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="pages/productos.html" id="navbarDropdownMenuLink"
+                            <a class="nav-link dropdown-toggle" href="pages/productos.html" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="pages/productos.html#Tapices">Tapices</a></li>
                                 <li><a class="dropdown-item" href="pages/productos.html#Posa vasos">Posa vasos</a></li>
                                 <li><a class="dropdown-item" href="pages/productos.html#Canastos">Canastos</a></li>
@@ -62,69 +63,72 @@
             </div>
         </nav>
     </div>
-    <hr><br>
-    <main class="principal">
-        <header>
-            <h1>Bienvenido a Cybelé</h1>
-        </header>
-        <section class="encabezado">
-            <p>En <i>Cybelé</i> nos ocupamos de decorar tu casa de una forma <b>mas amigable con el medioambiente</b>
-                <br>
-                De que manera? Realizando cada uno de nuestros productos con <b>materiales naturales y
-                biodegradables</b><br>
-                Si te interesa saber mas sobre nuestra marca hace click <a href="./pages/marca.html">aquí</a>
-                </div><br>
-        </section>
-        <section class="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
+    <br>
+    <div class="contenido">
+        <main class="principal">
+            <header>
+                <h1>Bienvenido a Cybelé</h1>
+            </header>
+            <section class="encabezado">
+                <p>En <i>Cybelé</i> nos ocupamos de decorar tu casa de una forma <b>mas amigable con el
+                        medioambiente</b>
+                    <br>
+                    De que manera? Realizando cada uno de nuestros productos con <b>materiales naturales y
+                        biodegradables</b><br>
+                    Si te interesa saber mas sobre nuestra marca hace click <a href="./pages/marca.html">aquí</a>
+                </p>
+            </section>
+            <section class="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="multimedia/imagenes/tapiz1_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/tapiz2_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/espejos_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/posavasos.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/canastos_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="multimedia/imagenes/alfombra_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="multimedia/imagenes/tapiz1_1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="multimedia/imagenes/tapiz2_1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="multimedia/imagenes/espejos_1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="multimedia/imagenes/posavasos.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="multimedia/imagenes/canastos_1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="multimedia/imagenes/alfombra_1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        <hr>
-    </main>
+            </section>
+            <hr>
+        </main>
+    </div>
     <div>
         <footer><br>
             <div class="footerTitulos">
@@ -133,9 +137,10 @@
             <div class="footerRedes">
                 <a href="https://www.instagram.com/cybele.deco/?hl=es" target="_blank"><img
                         src="multimedia/imagenes/logo_ig.png"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="multimedia/imagenes/logo_fb.png" alt=""></a>
-                <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img src="multimedia/imagenes/logo_tw.png"
+                <a href="https://www.facebook.com/" target="_blank"><img src="multimedia/imagenes/logo_fb.png"
                         alt=""></a>
+                <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img
+                        src="multimedia/imagenes/logo_tw.png" alt=""></a>
             </div><br>
             <hr><br>
             <div class="footerTitulos">

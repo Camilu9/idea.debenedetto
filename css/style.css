@@ -54,16 +54,11 @@ footer {
   justify-content: center;
   color: #ffe8d6; }
 
-/*doy funcion de bloque y centro el logo*/
-.logo {
-  display: block;
-  margin: auto;
-  padding: auto; }
-
-/*centro el carousel*/
-.navegacion {
-  display: flex;
-  justify-content: center; }
+/*doy tamaño y hago que no se deforme el logo en el nav*/
+.navegacion img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover; }
 
 /*doy color de fondo a la barra de navegacion y cambio color de fondo cuando se posa el mouse*/
 .navbar {
@@ -71,9 +66,22 @@ footer {
   .navbar li:hover {
     background-color: #cb997e; }
 
-/*doy color al menu desplegable*/
+/*doy color al menu desplegable y cambio el color de fondo cuando el mouse se posa*/
 .dropdown-menu {
   background-color: #ddbea9; }
+  .dropdown-menu li:hover {
+    background-color: white; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
+
+.contenido {
+  padding: 50px; }
+
+.hola {
+  width: 100%; }
 
 /*------------------------------------ ESTILOS  DE  LA  PAGINA  PRINCIPAL --------------------------------------*/
 /*doy margen, color de fondo, color y fuente de letra, estilo de padding, doy la funcion de block y de linea, centro el texto de los parrafos, doy nombre a la animacion, doy lugar al comienzo, doy tiempo a la duracion y al delay*/
@@ -633,6 +641,11 @@ footer {
   display: block;
   margin: auto;
   padding: auto; }
+
+/*doy funcion de flex y centro el div del video*/
+.video {
+  display: flex;
+  justify-content: center; }
 
 /*--------------------------------------  ESTILOS  DE  LA  PAGINA  RECOMENDACIONES  DE  CUIDADO -----------------------------------*/
 /*doy margen, color y fuente de letra y centro el texto de los h1 en la pagina de recomendaciones de cuidado*/

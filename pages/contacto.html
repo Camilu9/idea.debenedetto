@@ -13,25 +13,26 @@
     <title>Contacto</title>
 </head>
 <body class="bodyContact">
-    <div>
-        <img class="logo" src="../multimedia/imagenes/logoo.png"/><br>
-    </div>
     <div class="navegacion">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <a class="navbar-brand" href="#"><img class="logo" src="../multimedia/imagenes/logoo.png" /><br></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="productos.html#Tapices">Tapices</a></li>
                                 <li><a class="dropdown-item" href="productos.html#Posa vasos">Posa vasos</a></li>
                                 <li><a class="dropdown-item" href="productos.html#Canastos">Canastos</a></li>
@@ -55,7 +56,8 @@
                 </div>
             </div>
         </nav>
-    </div><hr><br>
+    </div><br>
+    <div class="contenido">
         <main class="contacto">
     <h1>Gracias por contactarte con Cybelé</h1><br>
     <div>
@@ -81,8 +83,7 @@
             <input type="submit" value="Enviar">
         </form>
     </div>
-    </main>
-    </header> <hr>
+    </main></div><hr>
     <div>
         <footer class="footerContact"><br>
             <div class="footerTitulos">

@@ -784,7 +784,7 @@ footer {
   text-align: center; }
 
 /*doy funcion de linea y bloque, centro el texto, doy margen,color de fondo, color y fuente de letra, estilo de padding y centro el texto en la pagina eco tutoriales*/
-.eco p {
+.eco h6 {
   display: inline-block;
   text-align: center;
   margin: 20px;
@@ -794,7 +794,7 @@ footer {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
 
-/*centro el div donde esta el texto*/
+/*centro el div donde esta el texto de los h6*/
 .pEco {
   text-align: center; }
 
@@ -806,38 +806,37 @@ footer {
   text-align: center;
   text-decoration: underline; }
 
-/*centro el contenido de mis flex*/
-.imgEco {
+.tutorialesDeco {
+  display: flex;
+  justify-content: space-around; }
+
+.tutorialesDeco img {
+  height: 287px;
+  width: 287px;
+  object-fit: cover; }
+
+.tutorialesNiños {
   display: flex;
   justify-content: center; }
 
-/*doy tamaño y evito que se deformen las imagenes*/
-.imgEco img {
-  height: 500px;
-  width: 500px;
+.tutorialesNiños img {
+  height: 287px;
+  width: 287px;
   object-fit: cover; }
 
-/*aplico grids a las imagenes con dos columnas y dos filas*/
-.imgsNiños {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  gap: 0px 0px;
-  grid-template-areas: "img1 img2" "img1 img3"; }
-
-.img1 {
-  grid-area: img1; }
-
-.img2 {
-  grid-area: img2; }
-
-.img3 {
-  grid-area: img3; }
-
-/*centro mis grids*/
-.imgsNiños {
+.tipsEco {
+  display: flex;
   justify-content: center; }
 
+.tipsEco img {
+  height: 287px;
+  width: 287px;
+  object-fit: cover; }
+
+.card {
+  position: inherit; }
+
+/*doy color al footer*/
 .footerEco {
   background-color: #ddbea9; }
 

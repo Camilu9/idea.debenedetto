@@ -58,33 +58,40 @@
   text-align: center;
   text-decoration: underline;
 }
+/*doy funcion flex y space around al contenido del div*/
 .tutorialesDeco{
   display: flex;
   justify-content: space-around;
 }
+/*doy tamaño a las imagenes manteniendo su forma*/
 .tutorialesDeco img{
   height: 287px;
   width: 287px;
   object-fit: cover;
 }
+/*doy funcion flex y centro el contenido del div*/
 .tutorialesNiños{
   display: flex;
   justify-content: center;
 }
+/*doy tamaño a las imagenes manteniendo su forma*/
 .tutorialesNiños img{
   height: 287px;
   width: 287px;
   object-fit: cover;
 }
+/*doy funcion flex y centro el contenido del div*/
 .tipsEco{
   display: flex;
   justify-content: center;
 }
+/*doy tamaño a las imagenes manteniendo su forma*/
 .tipsEco img{
   height: 287px;
   width: 287px;
   object-fit: cover;
 }
+/*doy position inherit a los componentes de boostrap para que no se posen sobre mi nav*/
 .card{
   position: inherit;
 }

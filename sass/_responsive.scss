@@ -2,28 +2,114 @@
 
 /*para celulares*/
 @media only screen and (max-width: 576px) {
+  /*doy color al footer para celulares*/
   footer {
     background-color: $verde3;
+  }
+  /*cambio el tamaño de los h3 en el footer para celulares*/
+  .footerTitulos h3{
+    font-size: medium;
+  }
+  /*cambio tamaño de los iconos del footer para celulares*/
+  .footerRedes img{
+    width: 20px;
+    height: 20px;
+  }
+  /*cambio tamaño de los div y les quito margin y padding, para celulares*/
+  .footerEstilo div{
+    width: 110px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+  /*cambio tamaño de los h4 del footer para celulares*/
+  .footerEstilo div h4{
+    font-size: smaller;
+  }
+  /*cambio tamaño de letra en los parrafos del footer para celulares*/
+  .footerEstilo div p{
+    font-size: xx-small;
+  }
+  /*doy tamaño a las imagenes dentro de los div product, marca y contacto, para celulares*/
+  .product img,
+  .marca img,
+  .contacto img{
+    height: 175px;
+    width: 175px;
+  }
+  /*doy tamaño a los parrafos de las páginas de mi sitio para celulares*/
+  .contenido p{
+    font-size: small;
+  }
+  /*doy tamaño a los h1 de las páginas de mi sitio para celulares*/
+  .contenido h1{
+    font-size: medium;
+  }
+  /*doy tamaño a los h2 de las páginas de mi sitio, para celulares*/
+  .contenido h2{
+    font-size: medium;
+  }
+  /*doy tamaño a los h3 de las páginas de mi sitio, para celulares*/
+  .contenido h3{
+    font-size: small;
+  }
+  /*doy tamaño a los h4 de las páginas de mi stio, para celulares*/
+  .contenido h4{
+    font-size: small;
+  }
+  /*doy tamaño a los h5 de las páginas de mi stio, para celulares*/
+  .contenido h5{
+    font-size: small;
+  }
+  /*quito los margenes del contenido de mis paginas y agrego solo margen superior de 40 px, para celulares*/
+  .contenido{
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+  }
+  /*doy tamaño a las imagenes dentro del div card manteniendo su forma, para celulares*/
+  .card img{
+    height: 175px;
+    width: 286px;
+    object-fit: cover;
+  }
+  /*doy tamaño a los recuadros donde esta la info de los tutoriales en la página ecotutoriales, para celulares*/
+  .card{
+    height: 450px;
+    width: 250px;
+  }
+  /*doy función de bloque a los recuadros donde esta la info de los tutoriales, para que puedan leerse uno abajo del otro, para celulares*/
+  .tutorialesDeco{
+    display: block;
+  }
+  /*doy margen y centro el texto a los recuadros donde esta la info de los tutoriales, para celulares*/
+  .tutorialesDeco div{
+    margin: 20px;
+    text-align: center;
+  }
+  /*doy tamaño al carrusel manteniendo la forma de las imagens, para celulares*/
+  #carouselExampleIndicators {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  /*doy fondo al body, para celulares*/
+  body{
+    background-color: $piel;
   }
 }
 /*para tablets*/
 @media only screen and (min-width: 576px) {
+  /*doy color de fondo al footer, para tablets*/
   footer {
     background-color: $piel;
   }
 }
+/*para computadoras*/
 @media only screen and (min-width: 1200px) {
+  /*doy color de fondo al footer, para computadoras*/
   footer {
     background-color: $rosa2;
   }
 }
-@media only screen and (max-width: 576px) {
-  body {
-    background-color: $piel;
-  }
-}
-@media only screen and (max-width: 576px) {
-  h1 {
-    background-color: $rosa2;
-  }
-}
+

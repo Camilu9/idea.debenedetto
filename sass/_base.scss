@@ -75,17 +75,15 @@ footer {
     background-color: white;
   }
 }
+/*hago que el nav se arrastre al scrollear, que su tamaño sea del total del ancho de la pantalla y le agrego una sombra*/
 .navbar{
   position: fixed;
   width: 100%;
   box-shadow:0px 4px 3px rgba(0,0,0,.5);
-  
 }
+/*doy un padding de 50px al div contenido*/
 .contenido{
   padding: 50px;
-}
-.hola{
-  width: 100%;
 }
 
 

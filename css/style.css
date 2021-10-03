@@ -72,16 +72,15 @@ footer {
   .dropdown-menu li:hover {
     background-color: white; }
 
+/*hago que el nav se arrastre al scrollear, que su tamaño sea del total del ancho de la pantalla y le agrego una sombra*/
 .navbar {
   position: fixed;
   width: 100%;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
 
+/*doy un padding de 50px al div contenido*/
 .contenido {
   padding: 50px; }
-
-.hola {
-  width: 100%; }
 
 /*------------------------------------ ESTILOS  DE  LA  PAGINA  PRINCIPAL --------------------------------------*/
 /*doy margen, color de fondo, color y fuente de letra, estilo de padding, doy la funcion de block y de linea, centro el texto de los parrafos, doy nombre a la animacion, doy lugar al comienzo, doy tiempo a la duracion y al delay*/
@@ -168,6 +167,7 @@ footer {
   text-align: center;
   font-family: inherit; }
 
+/*doy margen, color , fuente, centro, quito la decoracion y doy tamaño a la letra*/
 .product h3 {
   margin: 20px;
   color: #ddbea9;
@@ -579,6 +579,7 @@ footer {
   text-align: center;
   text-decoration: underline; }
 
+/*doy color de fondo al div que contiene el footer*/
 .footerProductos {
   background-color: #a5a58d; }
 
@@ -677,6 +678,7 @@ footer {
   display: inline-block;
   text-align: center; }
 
+/*doy margen, color a la letra, fuente, quito la decoracion y doy tamaño a la letra*/
 .recom h3 {
   margin: 20px;
   color: #ffe8d6;
@@ -757,6 +759,7 @@ footer {
   text-align: center;
   font-family: inherit; }
 
+/*doy margen de 20px, color, tamaño y centro la letra, doy padding, doy fuente a la letra, llamo a la animacion y le doy duracion al efecto*/
 .eco h5 {
   margin: 20px;
   color: white;
@@ -848,6 +851,7 @@ footer {
   background-color: #ddbea9; }
 
 /*------------------------------------------ ESTILOS  DE  LA  PAGINA  CONTACTO -----------------------------------------*/
+/*doy color de fondo al div*/
 .bodyContact {
   background-color: #cb997e; }
 

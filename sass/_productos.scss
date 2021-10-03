@@ -37,6 +37,7 @@
   text-align: center;
   font-family: inherit;
 }
+/*doy margen, color , fuente, centro, quito la decoracion y doy tamaño a la letra*/
 .product h3 {
   margin: 20px;
   color: $rosa1;
@@ -468,6 +469,7 @@
   text-align: center;
   text-decoration: underline;
 }
+/*doy color de fondo al div que contiene el footer*/
 .footerProductos {
   background-color: $verde2;
 }
